@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BBQ Borrow | Smoker & Grill Rentals in Southeast Michigan</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: #0f0f0f;
+      color: #f0f0f0;
+    }
+
+    header {
+      text-align: center;
+      padding: 48px 24px 32px;
+      border-bottom: 2px solid #c0392b;
+    }
+
+    header img {
+      width: 180px;
+      max-width: 80%;
+    }
+
+    header p {
+      margin-top: 12px;
+      font-size: 1.1rem;
+      color: #aaa;
+    }
+
+    section {
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 48px 24px;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      color: #e74c3c;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .pricing-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      margin-bottom: 12px;
+    }
+
+    .price-card {
+      background: #1a1a1a;
+      border: 1px solid #333;
+      border-radius: 8px;
+      padding: 24px;
+      text-align: center;
+    }
+
+    .price-card h3 {
+      font-size: 1rem;
+      color: #ccc;
+      margin-bottom: 8px;
+    }
+
+    .price-card .amount {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #e74c3c;
+    }
+
+    .price-card .per {
+      font-size: 0.85rem;
+      color: #888;
+      margin-top: 4px;
+    }
+
+    .delivery-note {
+      text-align: center;
+      color: #888;
+      font-size: 0.9rem;
+      margin-top: 8px;
+    }
+
+    .divider {
+      border: none;
+      border-top: 1px solid #222;
+      margin: 0;
+    }
+
+    .how-it-works ol {
+      list-style: none;
+      counter-reset: steps;
+    }
+
+    .how-it-works ol li {
+      counter-increment: steps;
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+      margin-bottom: 20px;
+      color: #ccc;
+      font-size: 1rem;
+      line-height: 1.5;
+    }
+
+    .how-it-works ol li::before {
+      content: counter(steps);
+      background: #c0392b;
+      color: #fff;
+      font-weight: bold;
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      font-size: 0.85rem;
+    }
+
+    .cta {
+      background: #1a1a1a;
+      border: 1px solid #333;
+      border-radius: 8px;
+      padding: 36px 24px;
+      text-align: center;
+    }
+
+    .cta p {
+      color: #ccc;
+      margin-bottom: 24px;
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+
+    .cta a.button {
+      display: inline-block;
+      background: #c0392b;
+      color: #fff;
+      text-decoration: none;
+      padding: 14px 36px;
+      border-radius: 6px;
+      font-size: 1.05rem;
+      font-weight: bold;
+      transition: background 0.2s;
+    }
+
+    .cta a.button:hover {
+      background: #e74c3c;
+    }
+
+    .cta .sub {
+      margin-top: 16px;
+      font-size: 0.85rem;
+      color: #666;
+    }
+
+    footer {
+      text-align: center;
+      padding: 24px;
+      color: #444;
+      font-size: 0.8rem;
+      border-top: 1px solid #1a1a1a;
+    }
+
+    @media (max-width: 480px) {
+      .pricing-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="logo.png" alt="BBQ Borrow logo" />
+    <p>Smoker &amp; grill rentals in Southeast Michigan</p>
+  </header>
+
+  <section>
+    <h2>Pricing</h2>
+    <div class="pricing-grid">
+      <div class="price-card">
+        <h3>Electric Smoker</h3>
+        <div class="amount">$40</div>
+        <div class="per">per day</div>
+      </div>
+      <div class="price-card">
+        <h3>Portable Grill</h3>
+        <div class="amount">$15</div>
+        <div class="per">per day</div>
+      </div>
+    </div>
+    <p class="delivery-note">Optional delivery &amp; pickup: $10</p>
+  </section>
+
+  <hr class="divider" />
+
+  <section class="how-it-works">
+    <h2>How It Works</h2>
+    <ol>
+      <li>Send us an email with your date and which smoker or grill you want.</li>
+      <li>We confirm availability and send you the details.</li>
+      <li>Pick up the equipment or add delivery for $10.</li>
+      <li>Cook, eat, enjoy. Return it when you're done.</li>
+    </ol>
+  </section>
+
+  <hr class="divider" />
+
+  <section>
+    <h2>Book a Rental</h2>
+    <div class="cta">
+      <p>Ready to fire it up? Send us your date and we'll get you sorted.</p>
+      <a class="button" href="mailto:jyoung@bbqborrow.com">Email to Book</a>
+      <p class="sub">We'll usually get back to you within a few hours.</p>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2026 BBQ Borrow &mdash; Southeast Michigan
+  </footer>
+
+</body>
+</html>
